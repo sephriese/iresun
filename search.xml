@@ -1,9 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[test]]></title>
+    <url>%2Fmyblog%2Ftest%2F</url>
+    <content type="text"><![CDATA[QQQQQwWwwwwwwsadasda]]></content>
+      <categories>
+        <category>js</category>
+      </categories>
+  </entry>
+  <entry>
     <title><![CDATA[hello word]]></title>
     <url>%2Fmyblog%2Fhello-word%2F</url>
     <content type="text"></content>
+      <categories>
+        <category>js</category>
+      </categories>
+      <tags>
+        <tag>读书笔记</tag>
+      </tags>
   </entry>
   <entry>
     <title><![CDATA[Hello World]]></title>
@@ -12,5 +26,8 @@
       <categories>
         <category>js</category>
       </categories>
+      <tags>
+        <tag>app</tag>
+      </tags>
   </entry>
 </search>

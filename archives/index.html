@@ -75,7 +75,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT">
+  <meta name="keywords" content="Hexo, NexT,vue,js,javaScript,css">
 
 
 
@@ -86,13 +86,17 @@
 
 
 
+<meta name="description" content="just a personal blog">
+<meta name="keywords" content="js,javascript,vue,">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Sephriese">
 <meta property="og:url" content="https://sephriese.github.io/myblog/archives/index.html">
 <meta property="og:site_name" content="Sephriese">
+<meta property="og:description" content="just a personal blog">
 <meta property="og:locale" content="zh-Hans">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Sephriese">
+<meta name="twitter:description" content="just a personal blog">
 
 
 
@@ -163,7 +167,7 @@
       </a>
     </div>
       
-        <p class="site-subtitle"></p>
+        <p class="site-subtitle">Pleasure To Everything</p>
       
   </div>
 
@@ -306,7 +310,7 @@
         
           
         
-        嗯..! 目前共计 2 篇日志。 继续努力。
+        嗯..! 目前共计 3 篇日志。 继续努力。
       </span>
 
       
@@ -320,6 +324,41 @@
           <div class="collection-title">
             <h1 class="archive-year" id="archive-year-2019">2019</h1>
           </div>
+        
+        
+
+        
+
+  <article class="post post-type-tags" itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+
+      <h2 class="post-title">
+        
+            <a class="post-title-link" href="/myblog/test/" itemprop="url">
+              
+                <span itemprop="name">test</span>
+              
+            </a>
+        
+      </h2>
+
+      <div class="post-meta">
+        <time class="post-time" itemprop="dateCreated" datetime="2019-05-30T14:41:15+08:00" content="2019-05-30">
+          05-30
+        </time>
+      </div>
+
+    </header>
+  </article>
+
+
+
+      
+
+        
+        
+        
+
         
         
 
@@ -360,7 +399,7 @@
 
         
 
-  <article class="post post-type-tags" itemscope itemtype="http://schema.org/Article">
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
     <header class="post-header">
 
       <h2 class="post-title">
@@ -429,7 +468,7 @@
               <img class="site-author-image" itemprop="image" src="/myblog/images/head_portrait.jpg" alt="Sephriese">
             
               <p class="site-author-name" itemprop="name">Sephriese</p>
-              <p class="site-description motion-element" itemprop="description"></p>
+              <p class="site-description motion-element" itemprop="description">just a personal blog</p>
           </div>
 
           <nav class="site-state motion-element">
@@ -439,7 +478,7 @@
               
                 <a href="/myblog/archives/">
               
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">3</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -449,13 +488,22 @@
               
               
               <div class="site-state-item site-state-categories">
-                
+                <a href="/myblog/categories/index.html">
                   <span class="site-state-item-count">1</span>
                   <span class="site-state-item-name">分类</span>
-                
+                </a>
               </div>
             
 
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/myblog/about/index.html">
+                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
             
 
           </nav>
@@ -535,7 +583,7 @@
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共73字</span>
+  <span class="post-count">博客全站共74字</span>
 </div>
 
         
@@ -692,6 +740,28 @@
 
 
 
+
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item=>{
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: false,
+        notify: true,
+        appId: 'V3wpNr4qFIRnkxJMg6REimna-gzGzoHsz',
+        appKey: '9N5AiFguTLwJNg1LvyJjzRWl',
+        placeholder: 'Just say what you want to say',
+        avatar:'mm',
+        guest_info:guest,
+        pageSize:'10' || 10,
+    });
+  </script>
 
 
 

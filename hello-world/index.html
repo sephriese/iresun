@@ -75,7 +75,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT">
+  <meta name="keywords" content="app,">
 
 
 
@@ -87,13 +87,14 @@
 
 
 <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.">
+<meta name="keywords" content="app">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hello World">
 <meta property="og:url" content="https://sephriese.github.io/myblog/hello-world/index.html">
 <meta property="og:site_name" content="Sephriese">
 <meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-05-28T08:28:28.086Z">
+<meta property="og:updated_time" content="2019-05-30T06:29:30.273Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hello World">
 <meta name="twitter:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.">
@@ -167,7 +168,7 @@
       </a>
     </div>
       
-        <p class="site-subtitle"></p>
+        <p class="site-subtitle">Pleasure To Everything</p>
       
   </div>
 
@@ -306,7 +307,7 @@
   
   
 
-  <article class="post post-type-tags" itemscope itemtype="http://schema.org/Article">
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
   
   
   
@@ -375,6 +376,16 @@
           
 
           
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/myblog/hello-world/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/myblog/hello-world/" itemprop="commentCount"></span>
+                </a>
+              </span>
             
           
 
@@ -480,8 +491,32 @@
     
 
     
+      <div>
+        <ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者：</strong>
+    Sephriese
+  </li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="https://sephriese.github.io/myblog/hello-world/" title="Hello World">https://sephriese.github.io/myblog/hello-world/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>
+    本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 3.0</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+
+      </div>
+    
 
     <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/myblog/tags/app/" rel="tag"># app</a>
+          
+        </div>
       
 
       
@@ -530,6 +565,9 @@
           
 
   
+    <div class="comments" id="comments">
+    </div>
+  
 
 
 
@@ -569,7 +607,7 @@
               <img class="site-author-image" itemprop="image" src="/myblog/images/head_portrait.jpg" alt="Sephriese">
             
               <p class="site-author-name" itemprop="name">Sephriese</p>
-              <p class="site-description motion-element" itemprop="description"></p>
+              <p class="site-description motion-element" itemprop="description">just a personal blog</p>
           </div>
 
           <nav class="site-state motion-element">
@@ -579,7 +617,7 @@
               
                 <a href="/myblog/archives/">
               
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">3</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -589,13 +627,22 @@
               
               
               <div class="site-state-item site-state-categories">
-                
+                <a href="/myblog/categories/index.html">
                   <span class="site-state-item-count">1</span>
                   <span class="site-state-item-name">分类</span>
-                
+                </a>
               </div>
             
 
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/myblog/about/index.html">
+                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
             
 
           </nav>
@@ -691,7 +738,7 @@
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共73字</span>
+  <span class="post-count">博客全站共74字</span>
 </div>
 
         
@@ -852,6 +899,28 @@
 
 
 
+
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item=>{
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: false,
+        notify: true,
+        appId: 'V3wpNr4qFIRnkxJMg6REimna-gzGzoHsz',
+        appKey: '9N5AiFguTLwJNg1LvyJjzRWl',
+        placeholder: 'Just say what you want to say',
+        avatar:'mm',
+        guest_info:guest,
+        pageSize:'10' || 10,
+    });
+  </script>
 
 
 
